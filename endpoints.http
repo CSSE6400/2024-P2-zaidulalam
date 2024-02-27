@@ -14,9 +14,12 @@ POST {{baseUrl}}/api/v1/todos
 Content-Type: application/json
 
 {
+    "id": 1,
     "title": "Test Todo",
     "description": "This is a test todo",
-    "completed": false
+    "completed": false,
+    "created_at": "2023-02-27T12:00:00.000000Z",
+    "updated_at": "2023-02-27T12:00:00.000000Z"
 }
 
 ### Update a Todo
@@ -24,7 +27,12 @@ PUT {{baseUrl}}/api/v1/todos/1
 Content-Type: application/json
 
 {
-    "title": "updated title"
+   "id": 1,
+    "title": "Updated Test Todo",
+    "description": "This is an updated test todo",
+    "completed": false,
+    "created_at": "2023-02-27T12:00:00.000000Z",
+    "updated_at": "2023-02-27T12:00:00.000000Z"
 }
 
 ### Delete a Todo
